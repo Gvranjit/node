@@ -1,0 +1,221 @@
+aaaloooo
+aaaloooo
+aaaloooo
+aaaloooo
+aaaloooo
+aaaloooo
+1589642449944testing log with time
+16testing log with time
+[16/4 / 2020 ]testing log with time
+[16/4/2020] testing log with time
+[16/4/2020] 15:29:21 >> testing log with time
+[16/4/2020] 15:29:52 >> testing log with time
+[16/4/2020] 15:32:25 >> So basically it makes a log file like in our server. Discord bot ma add garyoo vane we can track everything. even if someone deletes their message
+[16/4/2020] 15:43:34 >> Server Successfully started at port 3000
+[16/4/2020] 15:43:34 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:43:34 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:43:34 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:43:34 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:43:34 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:43:34 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Server Successfully started at port 3000
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:44:33 >> Successfully received connection requestion on port 3000!
+[16/4/2020] 15:47:3 >> Server Successfully started at port 3000
+[16/4/2020] 15:47:3 >> Successfully received connection request on port 3000!
+[16/4/2020] 15:47:3 >> Successfully received connection request on port 3000!
+[16/4/2020] 15:47:35 >> Server Successfully started at port 3000
+[16/4/2020] 15:47:37 >> Successfully received connection request on port 3000!
+[16/4/2020] 15:47:39 >> Successfully received connection request on port 3000!
+[16/4/2020] 15:47:40 >> Successfully received connection request on port 3000!
+[16/4/2020] 15:47:41 >> Successfully received connection request on port 3000!
+[16/4/2020] 15:47:41 >> Successfully received connection request on port 3000!
+[16/4/2020] 15:47:43 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:9:26 >> Server Successfully started at port 3000
+[16/4/2020] 19:9:29 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:13 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:13 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:14 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:15 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:15 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:16 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:16 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:17 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:18 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:18 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:19 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:19 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:20 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:10:23 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:15:47 >> Server Successfully started at port 3000
+[16/4/2020] 19:15:51 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:15:56 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:15:57 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:17:38 >> Server Successfully started at port 3000
+[16/4/2020] 19:17:40 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:18:13 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:18:39 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:18:54 >> Server Successfully started at port 3000
+[16/4/2020] 19:18:56 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:19:44 >> Server Successfully started at port 3000
+[16/4/2020] 19:19:46 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:20:6 >> Server Successfully started at port 3000
+[16/4/2020] 19:20:8 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:21:53 >> Server Successfully started at port 3000
+[16/4/2020] 19:21:55 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:22:58 >> Server Successfully started at port 3000
+[16/4/2020] 19:22:58 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:23:0 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:23:2 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:32:10 >> Server Successfully started at port 3000
+[16/4/2020] 19:32:14 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:32:17 >> message=test&submit=
+[16/4/2020] 19:32:17 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:32:53 >> Server Successfully started at port 3000
+[16/4/2020] 19:32:55 >> message=test&submit=
+[16/4/2020] 19:32:55 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:33:1 >> message=test&submit=
+[16/4/2020] 19:33:1 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:33:21 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:33:22 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:33:23 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:33:25 >> message=test&submit=
+[16/4/2020] 19:33:25 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:33:26 >> message=&submit=
+[16/4/2020] 19:33:26 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:37:40 >> Server Successfully started at port 3000
+[16/4/2020] 19:38:36 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:38:40 >> message=test&submit=
+[16/4/2020] 19:38:40 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:39:59 >> Server Successfully started at port 3000
+[16/4/2020] 19:40:1 >> message=test&submit=
+[16/4/2020] 19:40:1 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:40:4 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:40:7 >> message=tset
+[16/4/2020] 19:40:7 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:40:11 >> message=test
+[16/4/2020] 19:40:11 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:40:12 >> message=
+[16/4/2020] 19:40:12 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:40:14 >> message=test
+[16/4/2020] 19:40:14 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:41:1 >> Server Successfully started at port 3000
+[16/4/2020] 19:41:4 >> message=test
+[16/4/2020] 19:41:4 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:42:1 >> Server Successfully started at port 3000
+[16/4/2020] 19:42:46 >> Server Successfully started at port 3000
+[16/4/2020] 19:42:47 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:42:52 >> message=Mercantile
+[16/4/2020] 19:42:52 >> The message you sent was : ,Mercantile
+[16/4/2020] 19:42:52 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:43:14 >> Server Successfully started at port 3000
+[16/4/2020] 19:43:28 >> Server Successfully started at port 3000
+[16/4/2020] 19:43:32 >> message=test
+[16/4/2020] 19:43:32 >> The message you sent was : test
+[16/4/2020] 19:43:32 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:43:33 >> message=
+[16/4/2020] 19:43:33 >> The message you sent was : 
+[16/4/2020] 19:43:33 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:43:53 >> Server Successfully started at port 3000
+[16/4/2020] 19:43:54 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:43:57 >> message=Nisaan
+[16/4/2020] 19:43:57 >> The message you sent was : ,Nisaan
+[16/4/2020] 19:43:57 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:48:23 >> Server Successfully started at port 3000
+[16/4/2020] 19:48:27 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:48:32 >> message=testing
+[16/4/2020] 19:48:32 >> The message you sent was : ,testing
+[16/4/2020] 19:48:32 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:49:38 >> Server Successfully started at port 3000
+[16/4/2020] 19:49:40 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:49:42 >> message=Apple
+[16/4/2020] 19:49:42 >> The message you sent was : ,Apple
+[16/4/2020] 19:49:42 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:50:22 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:50:29 >> The message you sent was : ,Nepal
+[16/4/2020] 19:50:29 >> message=Nepal
+[16/4/2020] 19:50:29 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:50:58 >> Server Successfully started at port 3000
+[16/4/2020] 19:50:59 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:51:1 >> message=Lovely
+[16/4/2020] 19:51:1 >> The message you sent was : ,Lovely
+[16/4/2020] 19:51:1 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:55:31 >> Server Successfully started at port 3000
+[16/4/2020] 19:55:34 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:55:40 >> message=NinjaHatodi
+[16/4/2020] 19:55:40 >> The message you sent was : ,NinjaHatodi
+[16/4/2020] 19:55:40 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:56:53 >> Server Successfully started at port 3000
+[16/4/2020] 19:57:23 >> Server Successfully started at port 3000
+[16/4/2020] 19:57:30 >> message=test
+[16/4/2020] 19:57:30 >> The message you sent was : ,test
+[16/4/2020] 19:57:30 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:57:59 >> Server Successfully started at port 3000
+[16/4/2020] 19:58:3 >> message=test
+[16/4/2020] 19:58:3 >> The message you sent was : ,test
+[16/4/2020] 19:58:3 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:58:23 >> Server Successfully started at port 3000
+[16/4/2020] 19:58:36 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:58:41 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:58:42 >> Successfully received connection request on port 3000!
+[16/4/2020] 19:58:43 >> Successfully received connection request on port 3000!
+[16/4/2020] 20:10:19 >> Server Successfully started at port 3000
+[16/4/2020] 20:10:34 >> Server Successfully started at port 3000
+[16/4/2020] 20:11:4 >> Server Successfully started at port 3000
+[16/4/2020] 20:11:30 >> Server Successfully started at port 3000
+[16/4/2020] 20:12:28 >> Server Successfully started at port 3000
+[16/4/2020] 20:12:37 >> Server Successfully started at port 3000
+[16/4/2020] 20:13:1 >> Server Successfully started at port 3000
+[16/4/2020] 20:13:13 >> Server Successfully started at port 3000
+[16/4/2020] 20:14:44 >> Server Successfully started at port 3000
+[16/4/2020] 20:14:53 >> Successfully received connection request on port 3000!
+[16/4/2020] 20:14:57 >> message=test
+[16/4/2020] 20:14:57 >> The message you sent was : ,test
+[16/4/2020] 20:14:57 >> Successfully received connection request on port 3000!
+[16/4/2020] 20:15:0 >> message=
+[16/4/2020] 20:15:0 >> The message you sent was : ,
+[16/4/2020] 20:15:0 >> Successfully received connection request on port 3000!
+[16/4/2020] 20:15:1 >> message=
+[16/4/2020] 20:15:1 >> The message you sent was : ,
+[16/4/2020] 20:15:1 >> Successfully received connection request on port 3000!
+[16/4/2020] 20:15:2 >> message=
+[16/4/2020] 20:15:2 >> The message you sent was : ,
+[16/4/2020] 20:15:2 >> Successfully received connection request on port 3000!
+[16/4/2020] 20:15:24 >> Server Successfully started at port 3000
+[16/4/2020] 20:15:33 >> Server Successfully started at port 3000
+[17/4/2020] 2:2:38 >> Server Successfully started at port 3000
+[17/4/2020] 2:3:4 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:5 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:5 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:5 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:5 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:6 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:7 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:7 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:8 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:9 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:9 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:10 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:11 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:11 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:12 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:12 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:13 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:13 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:14 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:15 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:15 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:3:16 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:5:15 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:5:15 >> Successfully received connection request on port 3000!
+[17/4/2020] 2:5:15 >> Successfully received connection request on port 3000!
