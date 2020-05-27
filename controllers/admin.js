@@ -3,12 +3,9 @@ const products = new Product();
 
 exports.getAddProduct = (req, res, next) => {
      // console.log('In the add-product middleware');
-     res.render("admin/add-product", {
+     res.render("admin/edit-product", {
           pageTitle: "Add Products",
           path: "add-product",
-          formsCSS: true,
-          productCSS: true,
-          activeAddProduct: true,
      });
 };
 
@@ -22,7 +19,7 @@ exports.postAddProduct = (req, res, next) => {
      );
 
      product.save();
-     res.redirect("/admin/add-product");
+     res.redirect("/admin/edit-product");
 };
 
 exports.getAddedProduct = (req, res, next) => {
