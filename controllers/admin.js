@@ -21,7 +21,29 @@ exports.postAddProduct = (req, res, next) => {
      product.save();
      res.redirect("/admin/edit-product");
 };
+exports.getEditProduct = (req, res, next) => {
+     // console.log('In the add-product middleware');
+     const editMode = req.query.edit;
 
+     if (!editMode) {
+          console.log("Invalid query! ");
+          return res.redirect("/");
+     }
+     console.log(editMode);
+     let productId = req.params.productId;
+     Product.findById(productId, (product) => {
+          if (!product) {
+               console.log("No products found ! ");
+               return res.redirect("/");
+          }
+          res.render("admin/edit-product", {
+               pageTitle: productId,
+               path: "edit-product",
+               editMode: editMode,
+               product: product,
+          });
+     });
+};
 exports.getAddedProduct = (req, res, next) => {
      res.render("admin/added-product");
 };
