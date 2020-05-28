@@ -6,12 +6,14 @@ exports.getAddProduct = (req, res, next) => {
      res.render("admin/edit-product", {
           pageTitle: "Add Products",
           path: "add-product",
+          editMode: "false",
      });
 };
 
 exports.postAddProduct = (req, res, next) => {
      console.log(req.body);
      const product = new Product(
+          null,
           req.body.title,
           req.body.imageUrl,
           req.body.description,
@@ -19,7 +21,7 @@ exports.postAddProduct = (req, res, next) => {
      );
 
      product.save();
-     res.redirect("/admin/edit-product");
+     res.redirect("/admin/add-product");
 };
 exports.getEditProduct = (req, res, next) => {
      // console.log('In the add-product middleware');
@@ -43,6 +45,32 @@ exports.getEditProduct = (req, res, next) => {
                product: product,
           });
      });
+};
+
+exports.postUpdateProduct = (req, res, next) => {
+     const productId = req.body.productId;
+     const updatedTitle = req.body.title;
+     const updatedPrice = req.body.price;
+     const updatedDescription = req.body.description;
+     const updatedImageUrl = req.body.imageUrl;
+     const updatedProduct = new Product(
+          productId,
+          updatedTitle,
+          updatedImageUrl,
+          updatedDescription,
+          updatedPrice
+     );
+     console.log(updatedTitle);
+     updatedProduct.save();
+     return res.redirect("/admin/admin-product-list");
+     // /
+};
+
+exports.postDeleteProduct = (req, res, next) => {
+     const productId = req.params.productId;
+     console.log(productId);
+     Product.delete(productId);
+     return res.redirect("/admin/admin-product-list");
 };
 exports.getAddedProduct = (req, res, next) => {
      res.render("admin/added-product");

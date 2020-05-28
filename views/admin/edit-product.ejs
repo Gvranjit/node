@@ -6,8 +6,8 @@
           <main>
                <form
                     class="product-form"
-                    action="/admin/ <% if(editMode==='true'){%>edit-product<%}else{%>add-product<%}%>"
-                    method="GET"
+                    action="/admin/<% if(editMode==='true'){%>edit-product<%}else{%>add-product<%}%>"
+                    method="POST"
                >
                     <div class="form-control">
                          <label for="title">Book Title</label>
@@ -34,8 +34,13 @@
                               value="<% if(editMode==='true'){%><%=product.price%><%};%>"
                          />
                     </div>
+                    <%if(editMode==='true'){%><input
+                         type="hidden"
+                         value="<%=product.id%>"
+                         name="productId"
+                    /><%}%>
                     <button class="btn" type="submit">
-                         <% if(editMode==="true"){%> Update <%}else{%> Add
+                         <% if(editMode==='true'){%> Update <%}else{%> Add
                          Product <%}%>
                     </button>
                </form>
