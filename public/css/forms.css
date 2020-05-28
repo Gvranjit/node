@@ -7,7 +7,12 @@
 .form-control textarea {
      display: block;
      width: 100%;
+     color: white;
      margin-bottom: 0.25rem;
+}
+.form-control input,
+.form-control textarea {
+     background-color: darkgreen;
 }
 
 .form-control input,
@@ -21,5 +26,5 @@
 
 .form-control input:focus,
 .form-control textarea:focus {
-     outline-color: #00695c;
+     outline-color: black;
 }

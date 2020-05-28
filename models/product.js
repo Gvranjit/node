@@ -1,6 +1,7 @@
 const date = new Date();
 const fs = require("fs");
 const path = require("path");
+const Cart = require("./cart.js");
 const rootDir = require("../helpers/path");
 const p = path.join(rootDir, "data", "products.json");
 const getProdcutsFromFile = (cb) => {
@@ -25,30 +26,14 @@ module.exports = class Product {
      }
      static delete(productId) {
           getProdcutsFromFile((products) => {
-               const existingProductIndex = products.findIndex(
-                    (prodIndex) => prodIndex.id == productId
-               );
-               if (products.length == 1) {
-                    const updatedProducts = [];
-                    fs.writeFile(p, JSON.stringify(updatedProducts), (err) => {
-                         console.log(err);
-                    });
-               } else {
-                    const updatedProducts = products.splice(
-                         existingProductIndex,
-                         1
-                    );
-                    fs.writeFile(p, JSON.stringify(updatedProducts), (err) => {
-                         console.log(err);
-                    });
-               }
-               console.log(existingProductIndex);
-
-               console.log(
-                    "Product",
-                    products[existingProductIndex].title,
-                    "was deleted "
-               );
+               // const updatedProducts = products.filter(
+               //      (prodIndex) => prodIndex.id !== productId
+               // );
+               // console.log(updatedProducts);
+               // fs.writeFile(p, JSON.stringify(updatedProducts), (err) => {
+               //      console.log(err);
+               // });
+               Cart.deleteById(productId);
           });
      }
      save() {
@@ -61,10 +46,7 @@ module.exports = class Product {
                          }
                     );
                     const updatedProducts = [...products];
-                    console.log(
-                         "I REACHED THE DESTINATION THIS TIME ALSO",
-                         this
-                    );
+
                     updatedProducts[existingProductIndex] = this;
                     fs.writeFile(p, JSON.stringify(updatedProducts), (err) => {
                          console.log(err);

@@ -8,7 +8,7 @@ const Product = require("./product");
 function getProdcutsFromCart(p, cb) {
      fs.readFile(p, (err, fileContent) => {
           if (err) {
-               cb([]);
+               cb({});
           }
           if (!err) {
                cb(JSON.parse(fileContent));
@@ -17,24 +17,48 @@ function getProdcutsFromCart(p, cb) {
 }
 
 module.exports = class Cart {
-     static fetchAll(Products) {
-          console.log(pathCart);
+     // static fetchAll(Products) {
+     //      console.log(pathCart);
 
-          getProdcutsFromCart(pathCart, (cartProducts) => {
-               //Product.findById(cartProducts.id);
-               console.log(cartProducts.products);
-               const products = [];
-               for (let cartProduct of cartProducts.products) {
-                    Product.findById(cartProduct.id, (product) => {
-                         products.push(product);
-                         console.log(product.title);
+     //      getProdcutsFromCart(pathCart, (cartProducts) => {
+     //           //Product.findById(cartProducts.id);
+     //           console.log(cartProducts.products);
+     //           const products = [];
+     //           for (let cartProduct of cartProducts.products) {
+     //                Product.findById(cartProduct.id, (product) => {
+     //                     products.push(product);
+     //                     console.log(product.title);
+     //                });
+
+     //                console.log("this should come first");
+     //           }
+     //           console.log("this should come second.");
+     //      });
+     // }
+
+     static deleteById(id, price) {
+          getProdcutsFromCart(pathCart, (products) => {
+               if (products.products) {
+                    console.log(products.totalPrice);
+                    const deleteProduct = products.products.find(
+                         (p) => p.id == id
+                    );
+                    products.totalPrice -= deleteProduct.price;
+                    const updatedProducts = products.products.filter(
+                         (products) => products.id !== id
+                    );
+                    products.products = updatedProducts;
+                    fs.writeFile(pathCart, JSON.stringify(products), (err) => {
+                         console.log(err);
                     });
-
-                    console.log("this should come first");
+               } else {
+                    console.log("this was executed... the else statement");
+                    return;
                }
-               console.log("this should come second.");
+               console.log(products);
           });
      }
+
      static addProduct(id, price) {
           //fetch
           //analyze
