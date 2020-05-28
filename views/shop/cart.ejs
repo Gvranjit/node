@@ -10,30 +10,49 @@
                     <%if(prods.length>0) {for (product of prods){%>
                     <article class="card product-item">
                          <header class="card__header">
-                              <h1 class="product__title"><%=product.title%></h1>
+                              <h1 class="product__title">
+                                   <%=product.product.title%>
+                              </h1>
                          </header>
                          <div class="card__image">
-                              <img src="<%=product.imageUrl%>" alt="A Book" />
+                              <img
+                                   src="<%=product.product.imageUrl%>"
+                                   alt="A Book"
+                              />
                          </div>
                          <div class="card__content">
                               <h2 class="product__price">
-                                   Rs.<%=product.price%>
+                                   Unit Price Rs.<%=product.product.price%>
                               </h2>
                               <p class="product__description">
-                                   <%=product.description%>
+                                   Quantity : <%=product.qty%>
+                              </p>
+                              <p class="product__description">
+                                   Total Price :
+                                   <%=product.qty*product.product.price%>
                               </p>
                          </div>
                          <div class="card__actions">
-                              <a href="/products/<%=product.id%>" class="btn"
-                                   >Details</a
+                              <form
+                                   action="/cart/remove/<%=product.product.id%>"
+                                   method="POST"
                               >
-                              <%-include('../includes/add-to-cart.ejs')%>
+                                   <input
+                                        type="hidden"
+                                        name="productPrice"
+                                        value="<%=product.product.price%>"
+                                   />
+                                   <button type="submit" class="btn">
+                                        Remove from cart
+                                   </button>
+                              </form>
                          </div>
                     </article>
                     <% }} else{ %>
-                    <h1>No products found</h1>
+                    <h1>Your Cart is Empty</h1>
                     <%}%>
                </div>
+               <div><h1 class="cart-total">Total :<%= totalPrice %></h1></div>
           </main>
           <%- include('../includes/end.ejs') %>
      </body>

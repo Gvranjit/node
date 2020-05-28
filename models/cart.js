@@ -17,33 +17,37 @@ function getProdcutsFromCart(p, cb) {
 }
 
 module.exports = class Cart {
-     // static fetchAll(Products) {
-     //      console.log(pathCart);
-
-     //      getProdcutsFromCart(pathCart, (cartProducts) => {
-     //           //Product.findById(cartProducts.id);
-     //           console.log(cartProducts.products);
-     //           const products = [];
-     //           for (let cartProduct of cartProducts.products) {
-     //                Product.findById(cartProduct.id, (product) => {
-     //                     products.push(product);
-     //                     console.log(product.title);
-     //                });
-
-     //                console.log("this should come first");
-     //           }
-     //           console.log("this should come second.");
-     //      });
-     // }
+     static fetchAll(products) {
+          console.log(pathCart);
+          fs.readFile(pathCart, (err, fileContent) => {
+               if (err) {
+                    products(null);
+               } else {
+                    products(JSON.parse(fileContent)); // callback function to send back the  products object which is in the cart
+               }
+          });
+     }
 
      static deleteById(id, price) {
           getProdcutsFromCart(pathCart, (products) => {
-               if (products.products) {
-                    console.log(products.totalPrice);
+               if (products.products.length > 0) {
+                    console.log("Total price", products.totalPrice);
                     const deleteProduct = products.products.find(
                          (p) => p.id == id
                     );
-                    products.totalPrice -= deleteProduct.price;
+                    if (!deleteProduct) {
+                         console.log(
+                              'THE DELETED PRODUCT WASN"T FOUND IN CART'
+                         );
+                         return;
+                    }
+                    console.log(
+                         "Quantity:",
+                         deleteProduct.qty,
+                         " and price for each ",
+                         price
+                    );
+                    products.totalPrice -= price * deleteProduct.qty;
                     const updatedProducts = products.products.filter(
                          (products) => products.id !== id
                     );
