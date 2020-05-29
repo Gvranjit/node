@@ -12,7 +12,7 @@
 }
 .form-control input,
 .form-control textarea {
-     background-color: darkgreen;
+     background-color: rgba(221, 250, 221, 0.726);
 }
 
 .form-control input,
