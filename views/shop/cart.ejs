@@ -37,11 +37,13 @@
                                    action="/cart/remove/<%=product.product.id%>"
                                    method="POST"
                               >
-                                   <input
+                                   <!-- <input
                                         type="hidden"
                                         name="productPrice"
                                         value="<%=product.product.price%>"
-                                   />
+                                   /> -->
+
+                                   <!--The above code seems to be a dirty way to solving this problem. So instead of passing the value of ProductPrice from here, its better to find the product value in the backend using just the ID. In short, just using one key, which here is the product id -->
                                    <button type="submit" class="btn">
                                         Remove from cart
                                    </button>

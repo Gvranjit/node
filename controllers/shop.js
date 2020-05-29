@@ -50,9 +50,12 @@ exports.postCart = (req, res, next) => {
 
 exports.removeFromCart = (req, res, next) => {
      const productId = req.params.productId;
-     const price = req.body.productPrice;
-     Cart.deleteById(productId, price);
-     res.redirect("/cart");
+     // const price = req.body.productPrice; // this looks like a dirty wway of solving it. so finding another way below.
+     Product.findById(productId, (product) => {
+          const productPrice = product.price;
+          Cart.deleteById(productId, productPrice);
+          res.redirect("/cart");
+     });
 };
 exports.getCheckout = (req, res, next) => {
      res.render("shop/checkout", {

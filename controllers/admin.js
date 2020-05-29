@@ -68,10 +68,14 @@ exports.postUpdateProduct = (req, res, next) => {
 
 exports.postDeleteProduct = (req, res, next) => {
      const productId = req.params.productId;
-     const productPrice = req.body.productPrice;
-     console.log(productPrice);
-     Product.delete(productId, productPrice);
-     return res.redirect("/admin/admin-product-list");
+     // const productPrice = req.body.productPrice;
+     // since the above is a dirty method,this is not preferable
+
+     Product.findById(productId, (product) => {
+          const productPrice = product.price;
+          Product.delete(productId, productPrice);
+          return res.redirect("/admin/admin-product-list");
+     });
 };
 exports.getAddedProduct = (req, res, next) => {
      res.render("admin/added-product");
