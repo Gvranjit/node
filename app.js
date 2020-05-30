@@ -16,6 +16,7 @@ app.set("views", "views"); //First one is the reserved option and second is the 
 const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
 const errorHandler = require("./routes/error");
+const sequelize = require("./helpers/database");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -27,8 +28,10 @@ app.use(shopRoutes);
 
 app.use(errorHandler);
 
-app.listen(port);
-
-// const connect = http.createServer(app);
-// log('savetest 2');
-// connect.listen(port);
+sequelize
+     .sync()
+     .then((result) => {
+          //  /console.log(result);
+          app.listen(port);
+     })
+     .catch((err) => console.log(err));

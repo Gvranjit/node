@@ -20,8 +20,12 @@ exports.postAddProduct = (req, res, next) => {
           req.body.price
      );
 
-     product.save();
-     res.redirect("/admin/add-product");
+     product
+          .save()
+          .then(() => {
+               res.redirect("/admin/add-product");
+          })
+          .catch((err) => console.log(err));
 };
 exports.getEditProduct = (req, res, next) => {
      // console.log('In the add-product middleware');
@@ -77,9 +81,9 @@ exports.postDeleteProduct = (req, res, next) => {
           return res.redirect("/admin/admin-product-list");
      });
 };
-exports.getAddedProduct = (req, res, next) => {
-     res.render("admin/added-product");
-};
+// exports.getAddedProduct = (req, res, next) => {
+//      res.render("admin/added-product");
+// };
 
 exports.getAdminProductList = (req, res, next) => {
      Product.fetchAll((products) => {

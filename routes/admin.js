@@ -20,7 +20,7 @@ router.post("/delete-product/:productId", adminController.postDeleteProduct);
 
 router.post("/edit-product", adminController.postUpdateProduct);
 
-router.get("/added-product", adminController.getAddedProduct);
+//router.get("/added-product", adminController.getAddedProduct);
 
 router.get("/admin-product-list", adminController.getAdminProductList);
 

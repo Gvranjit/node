@@ -4,13 +4,17 @@ const products = new Product();
 // const cart = new Cart();
 
 exports.getProducts = (req, res, next) => {
-     Product.fetchAll((products) => {
-          res.render("shop/product-list", {
-               prods: products,
-               pageTitle: "Products",
-               path: "product-list",
+     Product.fetchAll()
+          .then(([rows]) => {
+               res.render("shop/product-list", {
+                    prods: rows,
+                    pageTitle: "Products",
+                    path: "product-list",
+               });
+          })
+          .catch((err) => {
+               console.log(err);
           });
-     });
 };
 
 exports.getCart = (req, res, next) => {
@@ -65,18 +69,15 @@ exports.getCheckout = (req, res, next) => {
 };
 exports.getProductDetail = (req, res, next) => {
      const productId = req.params.productId;
-     Product.findById(productId, (product) => {
-          console.log(product);
-          res.render("shop/product-detail", {
-               product: product,
-               pageTitle: "Product Detail",
-               path: "product-list",
-          });
-     });
-     // res.render("shop/product-detail", {
-     //      pageTitle: "Product Details",
-     //      path: "product-detail",
-     // });
+     Product.findById(productId)
+          .then(([product]) => {
+               res.render("shop/product-detail", {
+                    product: product[0],
+                    pageTitle: "Product Detail",
+                    path: "product-list",
+               });
+          })
+          .catch((err) => console.log(err));
 };
 exports.getIndex = (req, res, next) => {
      res.render("shop/index", {
