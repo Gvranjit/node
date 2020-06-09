@@ -11,36 +11,29 @@
                     <article class="card product-item">
                          <header class="card__header">
                               <h1 class="product__title">
-                                   <%=product.product.title%>
+                                   <%=product.title%>
                               </h1>
                          </header>
                          <div class="card__image">
-                              <img
-                                   src="<%=product.product.imageUrl%>"
-                                   alt="A Book"
-                              />
+                              <img src="<%=product.imageUrl%>" alt="A Book" />
                          </div>
                          <div class="card__content">
                               <h2 class="product__price">
-                                   Unit Price Rs.<%=product.product.price%>
+                                   Unit Price Rs.<%=product.price%>
                               </h2>
                               <p class="product__description">
                                    Quantity : <%=product.qty%>
                               </p>
                               <p class="product__description">
-                                   Total Price :
-                                   <%=product.qty*product.product.price%>
+                                   Total Price : <%=product.qty*product.price%>
                               </p>
                          </div>
                          <div class="card__actions">
-                              <form
-                                   action="/cart/remove/<%=product.product.id%>"
-                                   method="POST"
-                              >
+                              <form action="/cart/remove/<%=product.id%>" method="POST">
                                    <!-- <input
                                         type="hidden"
                                         name="productPrice"
-                                        value="<%=product.product.price%>"
+                                        value="<%=product.price%>"
                                    /> -->
 
                                    <!--The above code seems to be a dirty way to solving this problem. So instead of passing the value of ProductPrice from here, its better to find the product value in the backend using just the ID. In short, just using one key, which here is the product id -->
