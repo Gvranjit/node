@@ -7,7 +7,7 @@
 
           <main>
                <div class="grid">
-                    <%if(prods.length>0) {for (product of prods){%>
+                    <% let totalPrice=0;%> <%if(prods.length>0) {for (product of prods){%>
                     <article class="card product-item">
                          <header class="card__header">
                               <h1 class="product__title">
@@ -22,10 +22,10 @@
                                    Unit Price Rs.<%=product.price%>
                               </h2>
                               <p class="product__description">
-                                   Quantity : <%=product.qty%>
+                                   Quantity : <%=product.cartItem.qty%>
                               </p>
                               <p class="product__description">
-                                   Total Price : <%=product.qty*product.price%>
+                                   Total Price : Rs.<%=product.cartItem.qty*product.price%>
                               </p>
                          </div>
                          <div class="card__actions">
@@ -43,11 +43,11 @@
                               </form>
                          </div>
                     </article>
-                    <% }} else{ %>
+                    <%totalPrice+=product.cartItem.qty*product.price%> <% }} else{ %>
                     <h1>Your Cart is Empty</h1>
                     <%}%>
                </div>
-               <div><h1 class="cart-total">Total :<%= totalPrice %></h1></div>
+               <div><h1 class="cart-total">Total : Rs.<%= totalPrice %></h1></div>
           </main>
           <%- include('../includes/end.ejs') %>
      </body>
