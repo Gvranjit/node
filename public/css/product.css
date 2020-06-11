@@ -17,10 +17,13 @@
 
 .product__price {
      text-align: center;
-     color: #4d4d4d;
+     /* color: white; */
      margin-bottom: 0.5rem;
 }
 
 .product__description {
+     text-align: center;
+}
+.cart-total {
      text-align: center;
 }
