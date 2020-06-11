@@ -6,7 +6,53 @@
           <%- include('../includes/navigation.ejs') %>
 
           <main>
-               <div class="cart">test</div>
+               <div class="grid">
+                    <% let totalPrice=0;%> <%if(prods.length>0) {for (product of prods){%>
+                    <article class="card product-item">
+                         <header class="card__header">
+                              <h1 class="product__title">
+                                   <%=product.title%>
+                              </h1>
+                         </header>
+                         <div class="card__image">
+                              <img src="<%=product.imageUrl%>" alt="A Book" />
+                         </div>
+                         <div class="card__content">
+                              <h2 class="product__price">
+                                   Unit Price Rs.<%=product.price%>
+                              </h2>
+                              <p class="product__description">
+                                   Quantity : <%=product.cartItem.qty%>
+                              </p>
+                              <p class="product__description">
+                                   Total Price : Rs.<%=product.cartItem.qty*product.price%>
+                              </p>
+                         </div>
+                         <div class="card__actions">
+                              <form action="/cart/remove/<%=product.id%>" method="POST">
+                                   <!-- <input
+                                        type="hidden"
+                                        name="productPrice"
+                                        value="<%=product.price%>"
+                                   /> -->
+
+                                   <!--The above code seems to be a dirty way to solving this problem. So instead of passing the value of ProductPrice from here, its better to find the product value in the backend using just the ID. In short, just using one key, which here is the product id -->
+                                   <button type="submit" class="btn">
+                                        Remove from cart
+                                   </button>
+                              </form>
+                         </div>
+                    </article>
+                    <%totalPrice+=product.cartItem.qty*product.price%> <% }} else{ %>
+                    <h1>Your Cart is Empty</h1>
+                    <%}%>
+               </div>
+               <div><h1 class="cart-total">Total : Rs.<%= totalPrice %></h1></div>
+               <div class="centered">
+                    <form action="/create-order">
+                         <button class="btn" type="submit">Order</button>
+                    </form>
+               </div>
           </main>
           <%- include('../includes/end.ejs') %>
      </body>
