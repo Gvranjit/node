@@ -66,9 +66,10 @@ sequelize
      })
      .then((user) => {
           if (!user) {
-               User.create({ name: "Code", email: "code@craftnepal.host" });
+               return User.create({ name: "Code", email: "code@craftnepal.host" });
+          } else {
+               return user;
           }
-          return user;
      })
      .then((user) => {
           //console.log(user);

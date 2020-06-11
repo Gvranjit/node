@@ -1,5 +1,6 @@
 const Product = require("../models/product.js");
 const Cart = require("../models/cart");
+const { get } = require("../routes/shop.js");
 // const products = new Product();
 // const cart = new Cart();
 
@@ -157,10 +158,52 @@ exports.getIndex = (req, res, next) => {
           .catch((err) => console.log(err));
 };
 exports.getOrders = (req, res, next) => {
-     res.render("shop/orders", {
-          pageTitle: "Your Orders",
-          path: "orders",
-     });
+     req.user
+          .getOrders({ include: ["products"] })
+          .then((orders) => {
+               res.render("shop/orders", {
+                    pageTitle: "Your Orders",
+                    path: "orders",
+                    orders: orders,
+               });
+          })
+          .then((orders) => {
+               // console.log("**********************************************", products);
+          })
+          .catch((err) => console.log(err));
+};
+
+exports.postCreateOrder = (req, res, next) => {
+     let fetchedCart;
+     let products;
+     req.user
+          .getCart()
+          .then((cart) => {
+               fetchedCart = cart;
+               return cart.getProducts();
+          })
+          .then((cartProducts) => {
+               products = cartProducts;
+               return req.user.createOrder();
+          })
+          .then((order) => {
+               console.log("****************************************************");
+               console.log("****************************************************");
+               return order.addProducts(
+                    products.map((product) => {
+                         console.log(product.id);
+                         product.orderItem = { qty: 1 };
+                         return product;
+                    })
+               );
+          })
+          .then((result) => {
+               return fetchedCart.setProducts(null);
+          })
+          .then((result) => {
+               res.redirect("/orders");
+          })
+          .catch((err) => console.log(err));
 };
 
 //.console.log(adminData.products);

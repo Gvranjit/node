@@ -6,7 +6,18 @@
           <%- include('../includes/navigation.ejs') %>
 
           <main>
-               <div class="cart">test</div>
+               <div class="centered">
+                    <ul>
+                         <% orders.forEach(order=>{ %>
+                         <li><h1># <%= order.id %></h1></li>
+                         <% order.products.forEach(product=>{ %>
+                         <li>Product Name: <%=product.title%></li>
+                         <li>Product Price: <%=product.price %></li>
+                         <li>Purchased Quantity: <%=product.orderItem.qty %></li>
+                         <li>________________________________________</li>
+                         <% }); %> <% }); %>
+                    </ul>
+               </div>
           </main>
           <%- include('../includes/end.ejs') %>
      </body>

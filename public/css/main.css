@@ -155,3 +155,7 @@ main {
 .centered {
      text-align: center;
 }
+.centered {
+     display: block;
+     margin: auto;
+}
